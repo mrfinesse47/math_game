@@ -1,4 +1,14 @@
 require "./Question.rb"
+require "./Player.rb"
+require "./Game.rb"
 
-question = Question.new(1)
-# Question.ask
+# player1 = Player.new
+# player2 = Player.new
+# question = Question.new(player1.num)
+# question.ask?
+
+game = Game.new
+while game.turn?
+    game.score
+end
+game.score

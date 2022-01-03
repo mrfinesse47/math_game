@@ -1,5 +1,4 @@
-require 'turn.rb'
-require 'question.rb'
-require 'player.rb'
-require 'game.rb'
+require "./Question.rb"
 
+question = Question.new(1)
+# Question.ask

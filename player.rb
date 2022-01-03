@@ -1,5 +1,4 @@
 class Player
-
     @@num_of_players = 0
     def initialize
         @@num_of_players+=1

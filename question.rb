@@ -1,8 +1,8 @@
 class Question
    
     def initialize(player)
-        @num1 = 1 #should be random
-        @num2 = 2 #should be random
+        @num1 = rand(1..20)
+        @num2 = rand(1..20)
         @answer = @num1 + @num2
         @player = player
     end

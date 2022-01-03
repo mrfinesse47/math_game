@@ -4,6 +4,7 @@ class Game
         @player2 = Player.new
         @whos_turn = @player1
     end
+
     def turn?
         puts "----- NEW TURN -----"
         question = Question.new(whos_turn)
@@ -25,9 +26,9 @@ class Game
 
     def score
         if !game_over?
-        puts "P1 #{@player1.lives}/3 vs P2 #{@player2.lives}/3"
+        puts "P1 #{@player1.lives}/3 vs P2 #{@player2.lives}/3\n"
         else
-            puts "----- GAME OVER -----"
+            puts "----- GAME OVER -----\n"
             puts "#{winner.name} wins with a score of #{winner.lives}/3"
         end
     end

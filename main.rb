@@ -2,13 +2,9 @@ require "./Question.rb"
 require "./Player.rb"
 require "./Game.rb"
 
-# player1 = Player.new
-# player2 = Player.new
-# question = Question.new(player1.num)
-# question.ask?
-
 game = Game.new
-while game.turn?
+while game.turn? #runs as long as one player isnt dead
     game.score
 end
+
 game.score
